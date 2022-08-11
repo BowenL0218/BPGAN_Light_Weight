@@ -1,0 +1,21 @@
+#!/bin/bash
+python admm_network_comp_image.py \ 
+	--name="image_compression" \
+       	--dataroot="./datasets/image" \
+       	--gpu_ids=0 \
+       	--Color_Input="RGB" \
+       	--Color_Output="RGB" \
+       	--label_nc=3 \
+       	--output_nc=3 \
+       	--n_blocks_global=5 \
+       	--n_downsample_global=5 \
+       	--image_bit_num=8 \
+       	--C_channel=64 \
+       	--n_cluster=64 \
+       	--max_ngf=256 \
+       	--resize_or_crop='crop' \
+       	--fineSize=256 \
+        --loadSize=256 \
+	--batchSize=32 \
+      	--Conv_type='C' \
+       	--nThreads=32 
