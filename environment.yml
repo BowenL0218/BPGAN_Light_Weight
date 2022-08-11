@@ -1,0 +1,24 @@
+name: bpgan_env_3
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python==3.8 
+  - pip
+  - numpy
+  - scipy
+  - scikit-learn
+  - imageio
+  - matplotlib
+  - tqdm
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::torchaudio
+  - tensorboard
+  - conda-forge::dominate
+  - conda-forge::librosa
+  - conda-forge::jupyterlab
+  - pip:
+    - dahuffman
+    - wget
